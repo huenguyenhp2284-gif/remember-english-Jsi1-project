@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen - Remember English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/spck-Js24/css/listen.css">
+     <link rel="icon" type="image/png" sizes="16x16" href="/spck-Js24/imgandvd/favicon-16x16.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Remember English</h2>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="/spck-Js24/index.html">Trang chủ</a></li>
+                <li><a href="./listen.html" class="active">🎧 listen</a></li>
+                <li><a href="./read.html" > 📖 read </a></li>
+                <li><a href="./write.html">✍️ Sách</a></li>
+               
+                  <li><a href="./complain.html">✉ Complain</a></li>
+              
+                <li>
+                    <div class="search-mini">
+                        <input type="text" id="search-input" placeholder="Tìm podcast...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li>
+                    <button id="user-btn" class="btn-user">
+                        <i class="fas fa-user-circle"></i>
+                        <span id="username">Guest</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div class="section-title">
+            <h2>English Listen</h2>
+            <p>luyện nghe đọc tiếng anh</p>
+        </div>
+        <div id="podcast-list" class="podcast-grid">
+            <div class="loading">Đang tải bài nghe...</div>
+        </div>
+    </main>
+
+   
+
+
+    <div class="player-bar">
+        <div class="player-info">
+            <img id="player-img" src="https://via.placeholder.com/60" alt="Cover">
+            <div class="track-details">
+                <h4 id="player-title">Chọn bài nghe</h4>
+                <p id="player-artist">Ready to learn?</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play-btn" class="play-main"><i class="fas fa-play" id="play-icon"></i></button>
+            <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="player-volume">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.8">
+        </div>
+    </div>
+
+    <audio id="main-audio"></audio>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Remember English</h3>
+                <p>Nền tảng hỗ trợ học tiếng Anh toàn diện qua các kỹ năng Nghe, Nói, Đọc, Viết một cách bài bản và hiệu quả.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 style="margin-bottom: 15px;"></h4>
+                <ul>
+                     <li><a href="listen.html">Nghe (Listen)</a></li>
+                    <li><a href="./read.html">Đọc (read)</a></li>
+                    <li><a href="./write.html">sách</a></li>
+                   
+            </div>
+            <div class="footer-contact">
+                <h4 style="margin-bottom: 15px;">Liên hệ</h4>
+                <p><i class="fas fa-envelope"></i>huenguyenhp2284@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +0916949916</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Remember English. Lê Hoàng Ân.
+        </div>
+    </footer>
+      <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="MPcFgZFdOhyBhtnvoYb4I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<script type="module" src="./js/auth.js"></script>
+<script type="module" src="/spck-Js24/js/listen.js"></script>
+</body>
+</html>

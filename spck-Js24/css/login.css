@@ -1,0 +1,215 @@
+/* 1. Reset */
+:root {
+    --primary-color: #7a16df;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --white: #ffffff;
+        --card-bg: #181818;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+*{ margin: 0 ; padding: 0; box-sizing: border-box; }
+/* 2. Nền toàn trang */
+body {
+    background-image: url('/spck-Js24/imgandvd/phan-mem-hoc-tieng-anh-tren-may-tinh-1.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+
+/* 3. Thanh Navbar */
+/* 3. Thanh Navbar - Đẩy Logo và Giới thiệu dạt hẳn ra 2 bên */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px 50px; /* Tạo khoảng cách trên dưới và 2 bên lề */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%; /* Bắt buộc dãn rộng 100% để đẩy 2 bên */
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: space-between !important; /* ĐẨY 2 CÁI XA RA 2 GÓC */
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo h2 { 
+    font-size: 24px; 
+    color: white; 
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.btn-nav-login {
+    background: white; 
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 8px 20px; 
+    border-radius: 20px;
+    font-weight: 700; 
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-nav-login:hover {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+
+
+
+ 
+/* 4. Khung Đăng nhập  */
+.login-box {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 50px 40px;
+     width: 90%;
+    max-width: 480px;
+    padding: 40px 25px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    color: white;
+   
+   
+}
+
+
+/* 5. Tab chuyển đổi */
+.auth-tabs {
+    display: flex;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #444;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 15px 0;
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tab-link.active {
+    color: white;
+    border-bottom: 3px solid #7a16df;
+}
+
+/* 6. Input Groups */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100% !important; /* Ghi đè Bootstrap */
+    padding: 15px !important;
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-size: 16px;
+}
+
+/* 7. Nút bấm */
+.btn-signin {
+    width: 100%;
+    padding: 15px;
+    background-color: #7a16df;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #5e11ad;
+}
+
+/* 8. Ghi nhớ và Trợ giúp */
+.form-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.need-help {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column; 
+    }
+}
+/* FOOTER DÀN NGANG */
+.site-footer {
+    background: #111; 
+    padding: 40px 0 20px; 
+    margin-top: auto; /* Tự động bám chặt xuống đáy trang web */
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    max-width: 1300px; margin: 0 auto; padding: 0 50px;
+    display: flex; justify-content: space-between; gap: 40px;
+}
+
+.footer-info { flex: 2; }
+.footer-links, .footer-contact { flex: 1; }
+.footer-info h3 { color: var(--primary-color); margin-bottom: 15px; }
+.footer-info p, .footer-links a, .footer-contact p { color: #888; font-size: 14px; text-decoration: none; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a:hover { color: white; }
+
+.social-icons { display: flex; gap: 15px; margin-top: 15px; }
+.social-icons a { font-size: 20px; color: #888; transition: 0.3s; }
+.social-icons a:hover { color: white; }
+
+.footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px; font-size: 12px; color: #444; }

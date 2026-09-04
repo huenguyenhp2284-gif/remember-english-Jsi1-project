@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Remember English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/spck-Js24/css/checkout.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/spck-Js24/imgandvd/favicon-16x16.png">
+</head>
+<body>
+   <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Remember English</h2>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="/spck-Js24/index.html" >Trang chủ</a></li>
+                
+                <li><a href="./listen.html" >🎧 Listen</a></li>
+               <li><a href="./read.html" > 📖 read </a></li>
+                <li><a href="./write.html" class="active">✍️ sách</a></li>
+                <li><a href="./complain.html">✉ Complain</a></li>
+               
+            
+              
+                <li>
+                    <button id="user-btn" class="btn-user">
+                        <i class="fas fa-user-circle"></i>
+                        <span id="username">Guest</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <a href="write.html" class="btn-back"><i class="fas fa-arrow-left"></i> Sách</a> 
+                <h2><i class="fas fa-shopping-cart"></i> Thanh Toán Đơn Hàng</h2>
+            </div>
+
+            <!-- Tóm tắt sản phẩm -->
+            <div class="product-summary" id="product-summary">
+                <p style="text-align:center; color:#aaa; width:100%;">Đang tải sản phẩm...</p>
+            </div>
+
+            <!-- Giá tiền & Mã QR -->
+            <div class="payment-details">
+                <div class="price-row">
+                    <span>Thành tiền:</span>
+                    <span class="total-price" id="total-price">$0</span>
+                </div>
+
+                <div class="qr-section">
+                    <div id="qrcode"></div>
+                    <p><i class="fas fa-qrcode"></i> MÃ QR THANH TOÁN</p>
+                </div>
+
+                <p class="payment-instruction">
+                    Quét mã QR bằng ứng dụng ngân hàng hoặc Momo để hoàn tất chuyển khoản.
+                </p>
+            </div>
+
+            <!-- Form thông tin giao hàng -->
+            <form id="checkout-form" class="shipping-form">
+                <h3><i class="fas fa-truck"></i> Thông Tin Giao Hàng</h3>
+
+                <div class="form-group">
+                    <label for="fullname">Họ và tên người nhận:</label>
+                    <input type="text" id="fullname" required placeholder="Ví dụ: Lê Hoàng Ân">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" required placeholder="Ví dụ: 0916949916">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Địa chỉ nhận hàng (Ghi rõ số nhà, đường, quận/huyện):</label>
+                    <textarea id="address" rows="3" required placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố..."></textarea>
+                </div>
+
+                <button type="submit" id="btn-submit-order" class="btn-confirm">
+                    <i class="fas fa-check-circle"></i> Xác Nhận Đặt Hàng & Giao Hàng
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Modal Thông báo thành công -->
+    <div class="success-overlay" id="success-overlay">
+        <div class="success-box">
+            <i class="fas fa-check-circle"></i>
+            <h2>Đặt Hàng Thành Công!</h2>
+            <p style="color: #aaa; margin-top: 10px;">Cảm ơn bạn đã mua sách tại Remember English. Đơn hàng và địa chỉ đã được ghi nhận vào hệ thống.</p>
+            <button class="btn-home" onclick="window.location.href='write.html'">Quay lại Cửa Hàng</button>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Remember English</h3>
+                <p>Nền tảng hỗ trợ học tiếng Anh toàn diện qua các kỹ năng Nghe, Nói, Đọc, Viết một cách bài bản và hiệu quả.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Liên hệ</h4>
+                <p><i class="fas fa-envelope"></i> huenguyenhp2284@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +0916949916</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Remember English. Lê Hoàng Ân.
+        </div>
+    </footer>
+
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="/spck-Js24/js/checkout.js"></script>
+</body>
+</html>

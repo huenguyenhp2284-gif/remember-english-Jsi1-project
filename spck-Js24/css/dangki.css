@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #7a16df;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --white: #ffffff;
+        --card-bg: #181818;
+
+}
+
+*{ margin: 0 ; padding: 0; box-sizing: border-box; }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* 2. Nền toàn trang */
+body {
+    background-image: url('/spck-Js24/imgandvd/phan-mem-hoc-tieng-anh-tren-may-tinh-1.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* 3. Thanh Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px 50px; /* Tạo khoảng cách trên dưới và 2 bên lề */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: space-between !important; 
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo h2 { 
+    font-size: 24px; 
+    color: white; 
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.btn-nav-login {
+    background: white; 
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 8px 20px; 
+    border-radius: 20px;
+    font-weight: 700; 
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-nav-login:hover {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+
+/* 4. Khung Đăng ký  */
+.login-box {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 50px 40px;
+     width: 90%;
+    max-width: 480px;
+    padding: 40px 25px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    color: white;
+   
+   
+}
+
+
+/* 5. Tab chuyển đổi */
+.auth-tabs {
+    display: flex;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #444;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 15px 0;
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-link.active {
+    color: white;
+    border-bottom: 3px solid #7a16df;
+}
+
+/* 6. Input và Button */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    background-color: #2e2e2e;
+    border: 1px solid #444;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #7a16df;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 16px;
+    background-color: #7a16df;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #923df3;
+}
+
+.form-help {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.link-back {
+    color: #7a16df;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column; 
+    }
+}

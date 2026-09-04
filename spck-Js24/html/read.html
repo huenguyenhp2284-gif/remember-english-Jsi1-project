@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reading</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/spck-Js24/css/read.css">
+     <link rel="icon" type="image/png" sizes="16x16" href="/spck-Js24/imgandvd/favicon-16x16.png">
+</head>
+<body>
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Remember English</h2>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="/spck-Js24/index.html" >Trang chủ</a></li>
+                
+                <li><a href="./listen.html" >🎧 Listen</a></li>
+               <li><a href="./read.html" class="active"> 📖 read </a></li>
+                <li><a href="./write.html" >✍️ sách</a></li>
+                <li><a href="./complain.html">✉ Complain</a></li>
+               
+            
+              
+                <li>
+                    <button id="user-btn" class="btn-user">
+                        <i class="fas fa-user-circle"></i>
+                        <span id="username">Guest</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- khu read -->
+     <!-- KHU VỰC BÁO CHÍ -->
+    <main class="content-wrapper">
+        <div class="section-title">
+            <h2>English Daily News 📰</h2>
+            <p>Cập nhật tin tức thế giới và luyện kỹ năng đọc hiểu Tiếng Anh mỗi ngày</p>
+        </div>
+
+        <!-- BỘ LỌC CHỦ ĐỀ BÁO -->
+        <div class="category-buttons">
+            <button class="cat-btn active" data-category="general">🌐 Tổng hợp</button>
+            <button class="cat-btn" data-category="technology">💻 Công nghệ</button>
+            <button class="cat-btn" data-category="business">📈 Kinh tế</button>
+            <button class="cat-btn" data-category="sports">⚽ Thể thao</button>
+            <button class="cat-btn" data-category="entertainment">🎬 Giải trí</button>
+        </div>
+
+        <!-- DANH SÁCH BÀI BÁO -->
+        <div id="news-grid" class="news-grid">
+            <div class="loading">Đang tải tin tức mới nhất...</div>
+        </div>
+    </main>
+
+     <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Remember English</h3>
+                <p>Nền tảng hỗ trợ học tiếng Anh toàn diện qua các kỹ năng Nghe, Nói, Đọc, Viết một cách bài bản và hiệu quả.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 style="margin-bottom: 15px;"></h4>
+                <ul>
+                    <li><a href="listen.html">Nghe (Listen)</a></li>
+                    <li><a href="./read.html">Đọc (read)</a></li>
+                    <li><a href="./write.html">sách</a></li>
+                   
+            </div>
+            <div class="footer-contact">
+                <h4 style="margin-bottom: 15px;">Liên hệ</h4>
+                <p><i class="fas fa-envelope"></i>huenguyenhp2284@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +0916949916</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Remember English. Lê Hoàng Ân.
+        </div>
+    </footer>
+     <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="MPcFgZFdOhyBhtnvoYb4I";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+   <script type="module" src="./js/auth.js"></script>
+<script type="module" src="/spck-Js24/js/read.js"></script>
+</body>
+</html>
