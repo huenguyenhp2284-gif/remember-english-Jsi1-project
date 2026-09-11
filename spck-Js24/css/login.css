@@ -17,7 +17,7 @@
 *{ margin: 0 ; padding: 0; box-sizing: border-box; }
 /* 2. Nền toàn trang */
 body {
-    background-image: url('/spck-Js24/imgandvd/phan-mem-hoc-tieng-anh-tren-may-tinh-1.png'); 
+    background-image: url('../imgandvd/phan-mem-hoc-tieng-anh-tren-may-tinh-1.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
